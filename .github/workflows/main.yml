@@ -1,17 +1,14 @@
 name: build gatsby
 
-on:
-  push:
-    branches:
-      - gh-pages
+on: push
 
 jobs:
   build_gatsby:
     name: build
     runs-on: ubuntu-latest
-    
+
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: yarn install
         run: yarn install
