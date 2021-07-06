@@ -4,6 +4,12 @@ module.exports = {
   siteMetadata: metaConfig,
   plugins: [
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-dailyco-tech`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,

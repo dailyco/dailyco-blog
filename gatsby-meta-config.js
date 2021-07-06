@@ -21,7 +21,7 @@ module.exports = {
   },
   keywords: [`blog`, 'javascript', 'web', 'react', 'frontend', 'development'],
   comment: {
-    disqusShortName: '',
+    disqusShortName: '', // 'https-dailyco-tech',
     utterances: 'dailyco/dailyco-blog', // Your repository for archive comment
   },
   configs: {

@@ -10,6 +10,7 @@
   "dependencies": {
     "gatsby": "^2.2.8",
     "gatsby-image": "^2.0.34",
+    "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-lodash": "^3.0.5",
@@ -86,7 +87,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "deploy": "gatsby build && ph-pages -d public -b ph-pages",
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
 }
