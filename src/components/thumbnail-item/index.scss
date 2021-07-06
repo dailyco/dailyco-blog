@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.thumbnail {
+  display: block;
+  margin: 12px 0;
+  padding: 0 12px 10px;
+  box-shadow: none;
+  transition: text-shadow 0.3s, opacity 0.4s;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  opacity: 0;
+
+  p {
+    font-size: 90%;
+    line-height: 1.4;
+  }
+}
+
+.thumbnail.visible {
+  opacity: 1;
+}
