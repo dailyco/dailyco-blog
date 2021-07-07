@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  gatsby deploy:
+  deploy:
     name: deploy
     runs-on: ubuntu-latest
 
