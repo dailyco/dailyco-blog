@@ -16,18 +16,16 @@ jobs:
       - name: packages install
         run: yarn install
 
-      - name: deploy
-        run: npm run deploy
+      - name: gatsby build
+        run: |
+          yarn build
+          cp CNAME public/CNAME
         env:
           GH_API_KEY: ${{ secrets.API_KEY }}
+
+      - name: deploy
+        uses: maxheld83/ghpages@v0.2.1
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # - name: gatsby build
-      #   run: yarn build
-      #   env:
-      #     GH_API_KEY: ${{ secrets.API_KEY }}
-      # - name: deploy
-      #   uses: maxheld83/ghpages@v0.2.1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     GH_PAT: ${{ secrets.API_KEY }}
-      #     BUILD_DIR: 'public/'
+          GH_PAT: ${{ secrets.API_KEY }}
+          BUILD_DIR: 'public/'
