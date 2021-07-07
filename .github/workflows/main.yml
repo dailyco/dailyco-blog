@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  deploy:
+  gatsby deploy:
     name: deploy
     runs-on: ubuntu-latest
 
@@ -16,9 +16,14 @@ jobs:
       - name: packages install
         run: yarn install
 
+      # - name: gatsby build
+      #   run: yarn build
+      #   env:
+      #     GH_API_KEY: ${{ secrets.API_KEY }}
+
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
+        uses: maxheld83/ghpages@v0.2.1
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.API_KEY }}
-          publish_dir: 'public/'
+          BUILD_DIR: 'public/'
