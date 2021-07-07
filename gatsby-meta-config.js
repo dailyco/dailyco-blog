@@ -12,7 +12,7 @@ module.exports = {
     facebook: ``,
     linkedin: ``,
   },
-  icon: `content/assets/felog.png`, // Add your favicon
+  icon: `static/favicon.png`,
   // thumbnail: ``,
   resume: {
     title: 'About dailyco',
