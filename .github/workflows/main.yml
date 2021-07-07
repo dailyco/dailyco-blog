@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  gatsby deploy:
+  deploy:
     name: deploy
     runs-on: ubuntu-latest
 
@@ -15,11 +15,6 @@ jobs:
 
       - name: packages install
         run: npm install
-
-      # - name: gatsby build
-      #   run: yarn build
-      #   env:
-      #     GH_API_KEY: ${{ secrets.API_KEY }}
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
