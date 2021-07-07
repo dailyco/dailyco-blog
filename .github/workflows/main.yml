@@ -16,10 +16,10 @@ jobs:
       - name: packages install
         run: yarn install
 
-      # - name: gatsby build
-      #   run: yarn build
-      #   env:
-      #     GH_API_KEY: ${{ secrets.API_KEY }}
+      - name: gatsby build
+        run: yarn build
+        env:
+          GH_API_KEY: ${{ secrets.API_KEY }}
 
       - name: deploy
         uses: maxheld83/ghpages@v0.2.1
