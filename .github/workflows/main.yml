@@ -1,26 +1,29 @@
-name: build gatsby
+name: gatsby deploy
 
-on: push
+on:
+  push:
+    branches: [main]
 
 jobs:
-  build_gatsby:
-    name: build
+  gatsby deploy:
+    name: deploy
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: checkout code
+        uses: actions/checkout@v2
 
-      - name: yarn install
-        run: yarn install
+      - name: packages install
+        run: npm install
 
-      - name: gatsby build
-        env:
-          GH_API_KEY: ${{ secrets.API_KEY }}
-        run: yarn build
+      # - name: gatsby build
+      #   run: yarn build
+      #   env:
+      #     GH_API_KEY: ${{ secrets.API_KEY }}
 
       - name: deploy
-        uses: maxheld83/ghpages@v0.2.1
-        env:
+        uses: peaceiris/actions-gh-pages@v3
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.API_KEY }}
-          BUILD_DIR: 'public/'
+          publish_dir: 'public/'
