@@ -19,7 +19,8 @@ jobs:
       - name: gatsby build
         run: |
           yarn build
-          cp CNAME public/CNAME
+          cp CNAME public/
+          cp naverb590757858cde1fac02641d35befb649.html public/
         env:
           GH_API_KEY: ${{ secrets.API_KEY }}
 
