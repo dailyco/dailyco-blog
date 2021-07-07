@@ -17,12 +17,15 @@ jobs:
         run: yarn install
 
       - name: gatsby build
-        run: |
-          yarn build
-          cp CNAME public/
-          cp naverb590757858cde1fac02641d35befb649.html public/
+        run: yarn build
         env:
           GH_API_KEY: ${{ secrets.API_KEY }}
+
+      - name: file copy
+        run: |
+          cp CNAME public/
+          cp naverb590757858cde1fac02641d35befb649.html public/
+          cp sitemap.xml public/
 
       - name: deploy
         uses: maxheld83/ghpages@v0.2.1
