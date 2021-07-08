@@ -100,12 +100,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: `${__dirname}`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://dailyco.tech',
@@ -125,5 +119,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-lodash`,
+    `gatsby-plugin-advanced-sitemap`,
   ],
 }
