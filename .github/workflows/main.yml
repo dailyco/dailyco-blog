@@ -25,7 +25,7 @@ jobs:
         run: |
           cp CNAME public/
           cp naverb590757858cde1fac02641d35befb649.html public/
-          cp sitemap.xml public/
+          cp public/sitemap.xml public/
 
       - name: deploy
         uses: maxheld83/ghpages@v0.2.1
