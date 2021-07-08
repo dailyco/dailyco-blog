@@ -102,7 +102,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        path: `${__dirname}`,
+        output: `${__dirname}`,
       },
     },
     {
