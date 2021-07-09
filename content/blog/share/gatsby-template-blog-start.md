@@ -63,9 +63,8 @@ npm start
 
 <br />
 <br />
-<br />
 
-## 2. Repository 생성 & 연결
+## 3. Repository 생성 & 연결
 
 코드 관리를 위해 깃헙 레포지토리를 생성해 연결시켜주어야 한다.
 
@@ -86,7 +85,5 @@ git branch -M main
 git remote add origin ${repository_url}.git
 git push -u origin main
 ```
-
-<br />
 
 이렇게하면 이제 레포지토리와 생성한 블로그가 연결되어 코드를 편하게 관리할 수 있게 되었다.
