@@ -4,6 +4,12 @@ module.exports = {
   siteMetadata: metaConfig,
   plugins: [
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [metaConfig.ga],
+      },
+    },
+    {
       resolve: `gatsby-plugin-disqus`,
       options: {
         shortname: `https-dailyco-tech`,
@@ -71,14 +77,6 @@ module.exports = {
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-emoji`,
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: metaConfig.ga,
-        head: true,
-        anonymize: true,
       },
     },
     {
