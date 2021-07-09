@@ -23,7 +23,7 @@ draft: false
 
 그리고 드디어 노력의 결실 🍒
 
-![1차_테스트_결과_메일](./images/2021-NKLCW/NKLCW_1st_test_result.png)
+![1차_테스트_결과_메일](./images/2021-NKLCW/1st_test_result.png)
 
 1차 테스트에 합격했다! :)
 <br/>
@@ -36,9 +36,11 @@ draft: false
 
 그리고 마찬가지로 꾸준함의 결실 🍊
 
-![2차_테스트_결과_메일](./images/2021-NKLCW/NKLCW_2ed_test_result.png)
+![2차_테스트_결과_메일](./images/2021-NKLCW/2ed_test_result.png)
 
-2차 테스트도 당당히 통과!
+2차 테스트도 당당히 통과!  
+그런데 사진에서도 보이듯이 담당자 분이 숨은참조로 바꾸는 것을 잊으신것 같다.  
+아니면 일부러 몇배수인지 우리에게 알려주고 열심히 준비하도록 도모한 것인지...
 <br/>
 <br/>
 <br/>
@@ -52,7 +54,7 @@ draft: false
 
 제일 긴장됐던 면접까지 마치고 🍉
 
-![면접_결과_메일](./images/2021-NKLCW/NKLCW_interview_result.png)
+![면접_결과_메일](./images/2021-NKLCW/interview_result.png)
 
 짠! 최종 합격 메일을 받았다.  
 오후 5시가 되기 전에 통화로 먼저 최종 합격 연락을 주었고, 메일은 저녁 7시쯤 받았다.
