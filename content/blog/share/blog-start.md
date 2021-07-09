@@ -1,5 +1,5 @@
 ---
-title: Gastby 블로그 시작하기
+title: 블로그 시작하기
 date: 2021-07-09 23:07:75
 category: 공유
 thumbnail: { thumbnailSrc }
