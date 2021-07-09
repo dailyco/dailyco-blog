@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Dailyco Dev`,
+  title: `Dailyco.io`,
   description: `Blog posted about front-end, problem-solving.`,
   author: `dailyco`,
   introduction: `프론트엔드 주니어 개발자 🐥ㅤinterested in 알고리즘.문제해결.클린코드`,
