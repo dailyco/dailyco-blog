@@ -1,5 +1,5 @@
 ---
-title: '2021 네카라쿠배 프론트엔드스쿨 2기'
+title: 2021 네카라쿠배 프론트엔드스쿨 2기
 date: 2021-07-08 22:05:12
 category: 코딩테스트
 thumbnail: { thumbnailSrc }

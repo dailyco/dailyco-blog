@@ -1,5 +1,5 @@
 ---
-title: '2021 네이버웹툰 개발 챌린지 1차 코딩 테스트'
+title: 2021 네이버웹툰 개발 챌린지 1차 코딩 테스트
 date: 2021-07-09 15:07:17
 category: 코딩테스트
 thumbnail: { thumbnailSrc }

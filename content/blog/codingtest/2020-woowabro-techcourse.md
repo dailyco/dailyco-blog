@@ -1,5 +1,5 @@
 ---
-title: '2020 우아한 테크코스 3기 1차 코딩 테스트'
+title: 2020 우아한 테크코스 3기 1차 코딩 테스트
 date: 2020-11-14 23:07:78
 category: 코딩테스트
 thumbnail: { thumbnailSrc }

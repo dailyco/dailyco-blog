@@ -1,5 +1,5 @@
 ---
-title: '2021 부스트캠프 6기 1 · 2차 코딩 테스트'
+title: 2021 부스트캠프 6기 1 · 2차 코딩 테스트
 date: 2021-07-09 00:07:19
 category: 코딩테스트
 thumbnail: { thumbnailSrc }
