@@ -1,5 +1,5 @@
 ---
-title: Gastby 블로그 배포하기
+title: Gatsby 블로그 배포하기
 date: 2021-07-10 02:07:65
 category: 공유
 thumbnail: { thumbnailSrc }

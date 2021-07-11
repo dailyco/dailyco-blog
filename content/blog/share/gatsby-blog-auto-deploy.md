@@ -1,5 +1,5 @@
 ---
-title: Gastby 블로그 배포 자동화
+title: Gatsby 블로그 배포 자동화
 date: 2021-07-11 22:07:87
 category: 공유
 thumbnail: { thumbnailSrc }
