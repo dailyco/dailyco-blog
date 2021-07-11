@@ -7,6 +7,8 @@ draft: false
 ---
 
 Gatsby 블로그는 두가지 방법으로 배포가 가능하다. netlify로 배포하는 방법과 github pages로 배포하는 방법이 있는데, 두 가지 방법 모두 간단하기 때문에 자신이 원하는 방법을 선택하면 될 것 같다. 나는 굳이 netlify를 사용하는 것보다 github으로 배포와 코드 관리 모두 이루어지면 더 편할것 같아 github pages로 배포하기로 결정했다.
+<br />
+<br />
 
 ## 1. Github pages로 배포하기
 
