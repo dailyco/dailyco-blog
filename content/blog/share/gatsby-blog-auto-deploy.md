@@ -31,9 +31,9 @@ Github Actions를 사용하기 위해서는 먼저 해당 레포지토리에 접
 
 ### Work Flow 생성
 
-레포지토리의 `Actions` 메뉴로 가면 아래와 같이 초기 화면이 보일텐데 <u>setup a workflow yourself →</u> 를 클릭해 main.yml을 생성할 수 있도록 한다. 만약 이미 다른 Actions이 생성되어 있다면 오른쪽 상단의 `New workflow` 버튼을 클릭하면된다.
+레포지토리의 `Actions` 메뉴로 가면 아래와 같이 초기 화면이 보일텐데 <u>setup a workflow yourself →</u> 를 클릭해 `main.yml`을 생성할 수 있도록 한다. 만약 이미 다른 Actions이 생성되어 있다면 오른쪽 상단의 `New workflow` 버튼을 클릭하면된다.
 
-main.yml 파일은 어떠한 상황에 어떤 행동을 할 것인지 flow를 정의해주는 파일이며 아래와 같이 작성해주면 된다.
+`main.yml` 파일은 어떠한 상황에 어떤 행동을 할 것인지 flow를 정의해주는 파일이며 아래와 같이 작성해주면 된다.
 
 ```yaml
 name: gatsby deploy
@@ -57,14 +57,14 @@ jobs:
       - name: gatsby build
         run: yarn build
         env:
-          // API_KEY 에는 자신이 secret을 생성할 때 설정한 이름으로 넣어야 한다
+          # API_KEY 에는 자신이 secret을 생성할 때 설정한 이름으로 넣어야 한다
           GH_API_KEY: ${{ secrets.API_KEY }}
 
       - name: deploy
         uses: maxheld83/ghpages@v0.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          // API_KEY 에는 자신이 secret을 생성할 때 설정한 이름으로 넣어야 한다
+          # API_KEY 에는 자신이 secret을 생성할 때 설정한 이름으로 넣어야 한다
           GH_PAT: ${{ secrets.API_KEY }}
           BUILD_DIR: 'public/'
 ```
@@ -86,7 +86,7 @@ jobs:
 
 ### Push 해서 동작 확인
 
-main.yml 파일을 생성하면 기본적으로 `.github/workflow/` 디렉토리에 위치한다. 파일을 확인하고 main 브랜치에 push하면 `Actions` 탭에서 우리가 설정한 action이 실행되고, 실행이 완료되면 아래와 같이 실행 완료됐음을 확인할 수 있다.
+`main.yml` 파일을 생성하면 기본적으로 `.github/workflow/` 디렉토리에 위치한다. 파일을 확인하고 main 브랜치에 push하면 `Actions` 탭에서 우리가 설정한 action이 실행되고, 실행이 완료되면 아래와 같이 실행 완료됐음을 확인할 수 있다.
 
 ![Github_Actions_실행완료](./images/gatsby-blog-auto-deploy/complete_github_actions.png)
 
@@ -108,7 +108,7 @@ Github Actions를 사용해서 배포 과정을 자동화 시킨 것은 정말 �
 
 ### main.yml 파일 수정하기
 
-Github Actions에서 CNAME 파일을 복사시켜주는 과정을 추가하기 main.yml 파일을 아래와같이 수정해야한다.
+Github Actions에서 CNAME 파일을 복사시켜주는 과정을 추가하기 `main.yml` 파일을 아래와같이 수정해야한다.
 
 ```yaml
 name: gatsby deploy
@@ -145,7 +145,7 @@ jobs:
           BUILD_DIR: 'public/'
 ```
 
-build와 deploy 과정 사이에 CNAME 파일을 `public` 디렉토리에 복사하는 명령을 추가한 것이다. 이렇게하면 `public` 디렉토리 아래에 CNAME 파일이 복사되어 함께 배포되기 문제가 해결된다.
+build와 deploy 과정 사이에 CNAME 파일을 `public` 디렉토리에 복사하는 명령을 추가한 것이다. 이렇게하면 `public` 디렉토리 아래에 CNAME 파일이 복사되어 함께 배포되기때문에 문제가 해결된다.
 
 ### deploy script 수정
 
