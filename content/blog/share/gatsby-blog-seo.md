@@ -10,7 +10,7 @@ draft: false
 <br />
 <br />
 
-## SEO?
+## 1. SEO?
 
 SEO를 처음 들어보는 사람도 있을것이다. Search Engine Optimization 의 약어로 검색 엔진 최적화를 의미한다. 웹 페이지 검색엔진이 자료를 수집하고 순위를 매기는 방식에 맞게 웹 페이지를 구성해서 검색 결과의 상위에 나올 수 있도록 하는 작업을 말한다.
 
@@ -19,7 +19,7 @@ SEO를 처음 들어보는 사람도 있을것이다. Search Engine Optimization
 <br />
 <br />
 
-## 구글 SEO 작업하기
+## 2. 구글 SEO 작업하기
 
 먼저 구글에 내 블로그의 글이 잘 검색되게 하기 위해서는 웹 크롤러가 블로그를 찾아와 글을 크롤링할 수 있도록 이정표를 등록해야하는데, 이는 Google Search Console에 내 블로그를 등록한 후에 가능하다.
 
@@ -164,7 +164,7 @@ GSC에서 `Sitemaps` 메뉴로 이동하면 사이트맵을 추가할 수 있다
 <br />
 <br />
 
-## 네이버 SEO 작업하기
+## 3. 네이버 SEO 작업하기
 
 네이버도 구글과 비슷하다.  
 구글에서 GSC를 제공하는 것처럼 Search Advisor (웹 마스터 도구)를 제공한다.
@@ -242,7 +242,7 @@ Search Advisor에서 `검증 > robots.txt` 메뉴로 이동해 robots.txt 검증
 <br />
 <br />
 
-## 다음 SEO 작업하기
+## 4. 다음 SEO 작업하기
 
 다음은 웹사이트 정보를 직접 작성해 신청하는 방식이다. 그래서 엄청 간단하고 복잡한것도 없어서 딱히 설명할 것이 없다. [링크](https://register.search.daum.net/index.daum)에 들어가서 아래와 같이 블로그 등록을 선택해 URL을 입력하면 끝난다.
 
@@ -251,8 +251,19 @@ Search Advisor에서 `검증 > robots.txt` 메뉴로 이동해 robots.txt 검증
 <br />
 <br />
 
-## 느낀점
+## 5. 느낀점
 
 구글과 네이버, 다음에 모두 등록한 후에 몇일 사용하면서 느낀점은 `다음 > 구글 > 네이버` 순으로 사이트 등록이 빠르다. 다음은 등록하자마자 거의 바로 검색이 가능했고, 구글은 등록 후에 1~3일 정도 걸린 것 같다. 새롭게 포스팅을 작성해서 배포한 후에도 1~2일 정도 걸린 후 페이지가 등록되는 듯 하다. 네이버는 등록한지 이제 일주일정도 됐는데, 아직도 등록되지 않았다. 얼른 등록되면 좋겠다.
 
 그리고 Google Analytics에 블로그를 등록해 사람들의 블로그 유입을 확인하고 있는데, 이게 꽤나 재미있다. 많은 사람들이 내 블로그 글을 봤으면 하는 마음에 더 열심히 쓰게되기도 하고. Google Analytics에 등록하는 방법은 다음에 기회가 되면 포스팅하겠다. (사실 쉽고 간단해서 적을까말까 고민중이다.)
+<br />
+<br />
+<br />
+
+## Gastby 블로그 시리즈
+
+1. [Gatsby 템플릿으로 블로그 시작하기](https://dailyco.tech/share/gatsby-template-blog-start/)
+2. [Gatsby 블로그 배포하기](https://dailyco.tech/share/gatsby-blog-deploy)
+3. [Gatsby 블로그 도메인 연결하기](https://dailyco.tech/share/gatsby-blog-domain)
+4. [Gatsby 블로그 배포 자동화](https://dailyco.tech/share/gatsby-blog-auto-deploy)
+5. [Gatsby 블로그 SEO 작업하기](https://dailyco.tech/share/gatsby-blog-seo)

@@ -67,3 +67,14 @@ Source 브랜치를 설정했을 때와 마찬가지로 github pages에서 custo
 
 위 과정을 모두 마치면, 아래와 같이 우리가 구매한 도메인 사이트에서 블로그를 볼 수 있다.
 ![dailyco.tech_블로그](./images/gatsby-blog-domain/blog.png)
+<br />
+<br />
+<br />
+
+## Gastby 블로그 시리즈
+
+1. [Gatsby 템플릿으로 블로그 시작하기](https://dailyco.tech/share/gatsby-template-blog-start/)
+2. [Gatsby 블로그 배포하기](https://dailyco.tech/share/gatsby-blog-deploy)
+3. [Gatsby 블로그 도메인 연결하기](https://dailyco.tech/share/gatsby-blog-domain)
+4. [Gatsby 블로그 배포 자동화](https://dailyco.tech/share/gatsby-blog-auto-deploy)
+5. [Gatsby 블로그 SEO 작업하기](https://dailyco.tech/share/gatsby-blog-seo)

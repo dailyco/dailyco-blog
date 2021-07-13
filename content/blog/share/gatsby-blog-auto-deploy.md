@@ -159,3 +159,14 @@ Github Actions만을 사용해 배포할 경우 `main.yml` 파일만 수정하�
 ```
 
 `package.json` 파일의 script 부분을 위처럼 copy를 추가하고, deploy를 수정하면 된다. Github Actions과 마찬가지로 build하고 deploy하기 전에 CNAME 파일을 `public` 디렉토리 아래에 복사하도록 한것이다.
+<br />
+<br />
+<br />
+
+## Gastby 블로그 시리즈
+
+1. [Gatsby 템플릿으로 블로그 시작하기](https://dailyco.tech/share/gatsby-template-blog-start/)
+2. [Gatsby 블로그 배포하기](https://dailyco.tech/share/gatsby-blog-deploy)
+3. [Gatsby 블로그 도메인 연결하기](https://dailyco.tech/share/gatsby-blog-domain)
+4. [Gatsby 블로그 배포 자동화](https://dailyco.tech/share/gatsby-blog-auto-deploy)
+5. [Gatsby 블로그 SEO 작업하기](https://dailyco.tech/share/gatsby-blog-seo)

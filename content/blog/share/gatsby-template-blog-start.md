@@ -89,3 +89,14 @@ git push -u origin main
 ```
 
 이렇게하면 이제 레포지토리와 생성한 블로그가 연결되어 코드를 편하게 관리할 수 있게 되었다.
+<br />
+<br />
+<br />
+
+## Gastby 블로그 시리즈
+
+1. [Gatsby 템플릿으로 블로그 시작하기](https://dailyco.tech/share/gatsby-template-blog-start/)
+2. [Gatsby 블로그 배포하기](https://dailyco.tech/share/gatsby-blog-deploy)
+3. [Gatsby 블로그 도메인 연결하기](https://dailyco.tech/share/gatsby-blog-domain)
+4. [Gatsby 블로그 배포 자동화](https://dailyco.tech/share/gatsby-blog-auto-deploy)
+5. [Gatsby 블로그 SEO 작업하기](https://dailyco.tech/share/gatsby-blog-seo)

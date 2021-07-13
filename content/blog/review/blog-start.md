@@ -52,18 +52,21 @@ draft: false
 
 그러니까 나와 비슷한 생각을 가지고 계신 분들이라면 함께 나누고 공유했으면 좋겠다.  
 아직 성장하고픈 열망이 가득한 주니어 개발자이기 때문에ㅎㅎ 화이팅!
-
-<!-- <br />
 <br />
 <br />
+<br />
 
-## 4. Gastby 블로그 시리즈
+## Gastby 블로그 시리즈
 
 혹시 블로그를 하고픈 마음이 생겼다면,
 특히 gatsby를 사용하고싶다면 아래 글들을 참고하는 것을 추천한다.
 
-- [Gastby 템플릿으로 블로그 시작하기]()
-- [Gastby 블로그 배포하기]()
-- [Gastby 블로그 배포 자동화]()
-- [Gastby 블로그 SEO 등록하기]()
-- [Gastby 블로그 google analytics 등록하기]() -->
+1. [Gatsby 템플릿으로 블로그 시작하기](https://dailyco.tech/share/gatsby-template-blog-start/)
+2. [Gatsby 블로그 배포하기](https://dailyco.tech/share/gatsby-blog-deploy)
+3. [Gatsby 블로그 도메인 연결하기](https://dailyco.tech/share/gatsby-blog-domain)
+4. [Gatsby 블로그 배포 자동화](https://dailyco.tech/share/gatsby-blog-auto-deploy)
+5. [Gatsby 블로그 SEO 작업하기](https://dailyco.tech/share/gatsby-blog-seo)
+
+<!--
+6. [Gatsby 블로그 google analytics 등록하기](https://dailyco.tech/share/)
+7. [Gatsby 블로그 커스텀하기](https://dailyco.tech/share/) -->

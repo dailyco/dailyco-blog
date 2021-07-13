@@ -80,3 +80,14 @@ github pages의 Source까지 모두 설정시켜주면 배포는 끝이난다.
 주의해야할 부분은, 레포지토리의 이름을 `${github-id}.github.io`로 했다면 "\${github-id}.github.io"에서 배포된 사이트를 확인할 수 있다.
 
 하지만 레포지토리의 이름을 원하는대로 다르게 했다면 "\${github-id}.github.io/\${repository-name}"에서 배포된 사이트를 확인 가능하다.
+<br />
+<br />
+<br />
+
+## Gastby 블로그 시리즈
+
+1. [Gatsby 템플릿으로 블로그 시작하기](https://dailyco.tech/share/gatsby-template-blog-start/)
+2. [Gatsby 블로그 배포하기](https://dailyco.tech/share/gatsby-blog-deploy)
+3. [Gatsby 블로그 도메인 연결하기](https://dailyco.tech/share/gatsby-blog-domain)
+4. [Gatsby 블로그 배포 자동화](https://dailyco.tech/share/gatsby-blog-auto-deploy)
+5. [Gatsby 블로그 SEO 작업하기](https://dailyco.tech/share/gatsby-blog-seo)
