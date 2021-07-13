@@ -1,4 +1,4 @@
-# [Dailyco Dev](http://dailyco.tech)
+# [Dailyco.io](http://dailyco.tech)
 
 Powered by [Gatsby-starter-bee](https://github.com/JaeYeopHan/gatsby-starter-bee)
 
