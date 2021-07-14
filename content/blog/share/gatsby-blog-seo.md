@@ -21,7 +21,7 @@ SEO를 처음 들어보는 사람도 있을것이다. Search Engine Optimization
 
 ## 2. 구글 SEO 작업하기
 
-먼저 구글에 내 블로그의 글이 잘 검색되게 하기 위해서는 웹 크롤러가 블로그를 찾아와 글을 크롤링할 수 있도록 이정표를 등록해야하는데, 이는 Google Search Console에 내 블로그를 등록한 후에 가능하다.
+먼저 구글에 내 블로그의 글이 잘 검색되게 하기 위해서는 웹 크롤러가 블로그를 찾아와 글을 크롤링할 수 있도록 이정표를 등록해야하는데, 이는 Google Search Console에 내 블로그를 등록한 후에 가능하다. GSC에 블로그를 등록해보자.
 
 ### Google Search Console 사이트 등록
 
@@ -112,44 +112,47 @@ HTML 파일로 소유권을 확인하는 방법 외에도 HTML 태그나 구글 
 <br />
 <br />
 
-### gatsby-plugin-sitemap 설치
+### gatsby-plugin-sitemap & gatsby-plugin-feed 설치
 
-이전에 말했듯 웹 크롤러가 블로그를 찾아와 글을 크롤링할 수 있도록 이정표를 등록해야하는데, `sitemap.xml` 파일이 이정표 역할을 한다. 해당 파일을 만들어보자.
+이전에 말했듯 웹 크롤러가 블로그를 찾아와 글을 크롤링할 수 있도록 이정표를 등록해야하는데, `sitemap.xml` 파일이 이정표 역할을 한다. 또한 `sitemap.xml` 과 비슷하게 블로그에 새로운 글을 포스팅하면 내 블로그를 구독한 사람들에게 알려주는 역할을 하는 `rss.xml`을 등록하는 것도 SEO 작업에 포함된다. 해당 파일들을 만들어보자.
 
-gatsby 블로그는 `sitemap.xml` 을 자동으로 생성해주는 `gatsby-plugin-sitemap` 플러그인이 있다. 이 플러그인을 설치하기 위해 아래 명령어를 입력해준다.
+gatsby 블로그는 `sitemap.xml` 과 `rss.xml` 을 자동으로 생성해주는 플러그인이 있다. 이 플러그인을 설치하기 위해 아래 명령어를 입력해준다.
 
 ```sh
-yarn add gatsby-plugin-sitemap
-
+yarn add gatsby-plugin-sitemap # sitemap.xml 파일 자동생성 플러그인
+yarn add gatsby-plugin-feed # rss.xml 파일 자동생성 플러그인
 ```
 
-그리고 `gatsby-config.js` 파일의 `plugins` 부분에 아래와 같이 추가하면, build 될 때 `gatsby-plugin-sitemap` 플러그인이 `sitemap.xml` 파일을 생성하게된다.
+그리고 `gatsby-config.js` 파일의 `plugins` 부분에 아래와 같이 추가하면, build 될 때 각 플러그인이 `sitemap.xml` 과 `rss.xml` 파일을 생성하게된다.
 
 ```js
 plugins: [
 	...
-	'gatsby-plugin-sitemap',
+  'gatsby-plugin-sitemap',
+  'gatsby-plugin-feed',
 	...
 ]
 ```
 
-`sitemap.xml` 이 제대로 생성되었는지 확인해보자.
+`sitemap.xml` 과 `rss.xml` 이 제대로 생성되었는지 확인해보자.
 
 ```sh
 gatsby develop
 ```
 
 위 명령을 입력하고 "localhost:8000/sitemap.xml" 을 열어 페이지가 제대로 나오면 `sitemap.xml` 파일이 제대로 만들어진 것이다.
+그리고 마찬가지로 "localhost:8000/rss.xml" 을 열러 페이지가 제대로 나오면 `rss.xml` 파일도 제대로 만들어진 것이다.
 <br />
 <br />
 
-### sitemap.xml 제출하기
+### sitemap.xml & rss.xml 제출하기
 
-`sitemap.xml` 파일이 제대로 생성되었다면 이제 제출만하면 된다. 제출하기 전 배포를 진행해 `sitemap.xml` 파일도 함께 배포시키고, GSC에서 사이트맵을 제출해보자.
+파일이 제대로 생성되었다면 이제 제출만하면 된다. 제출하기 전 배포를 진행해 `sitemap.xml` 과 `rss.xml` 파일도 함께 배포시키고, GSC에서 사이트맵을 제출해보자.
 
-GSC에서 `Sitemaps` 메뉴로 이동하면 사이트맵을 추가할 수 있다. 아래와 사진과 같이 새 사이트맵 추가 영역에 `${처음에 속성을 등록할때 입력했던 도메인 또는 url}/sitemap.xml` 을 입력해 제출한다. sitemap.xml 파일의 이름을 변경했거나, 특정 디렉토리에 위치시켰다면 그것에 맞게 입력해주면 된다.
+GSC에서 `Sitemaps` 메뉴로 이동하면 추가할 수 있다. 아래와 사진과 같이 새 사이트맵 추가 영역에 `${처음에 속성을 등록할때 입력했던 도메인 또는 url}/sitemap.xml` 그리고 `${처음에 속성을 등록할때 입력했던 도메인 또는 url}/rss.xml` 를 입력해 제출한다. 파일의 이름을 변경했거나, 특정 디렉토리에 위치시켰다면 그것에 맞게 입력해주면 된다.
 
 ![GSC_사이트맵_제출](./images/gatsby-blog-seo/gsc_sitemap_register.png)
+![GSC_RSS_제출](./images/gatsby-blog-seo/gsc_rss_register.png)
 <br />
 <br />
 
@@ -180,14 +183,15 @@ GSC에서 했던 것과 비슷하게 소유권 인증을 해야하는데, Search
 <br />
 <br />
 
-### sitemap.xml 제출하기
+### sitemap.xml & rss.xml 제출하기
 
-블로그가 등록되면 `요청 > 사이트맵 제출` 메뉴로 이동해 사이트맵을 제출할 수 있다.  
-아래 사진과 같이 입력한 후 `확인` 버튼을 클릭하면 사이트맵이 제출된다.
+블로그가 등록되면 각각 `요청 > 사이트맵 제출` 메뉴, `요청 > RSS 제출` 메뉴로 이동해 사이트맵과 RSS를 제출할 수 있다. 아래 사진과 같이 입력한 후 `확인` 버튼을 클릭하면 제출된다.
 
 ![네이버_사이트맵_제출](./images/gatsby-blog-seo/naver_sitemap_register.png)
 
-구글과 마찬가지로 sitemap.xml 파일의 이름을 변경했거나, 특정 디렉토리에 위치시켰다면 그것에 맞게 입력해주면 된다.
+![네이버_RSS_제출](./images/gatsby-blog-seo/naver_rss_register.png)
+
+구글과 마찬가지로 파일의 이름을 변경했거나, 특정 디렉토리에 위치시켰다면 그것에 맞게 입력해주면 된다.
 <br />
 <br />
 
