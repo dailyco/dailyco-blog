@@ -6,8 +6,8 @@
   padding: 0 12px 10px;
   box-shadow: none;
   transition: text-shadow 0.3s, opacity 0.4s;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 6px;
+  border: 1px solid transparent;
+
   opacity: 0;
 
   p {
@@ -18,4 +18,9 @@
 
 .thumbnail.visible {
   opacity: 1;
+}
+
+.divider {
+  height: 1px;
+  background: $theme-gradient;
 }
