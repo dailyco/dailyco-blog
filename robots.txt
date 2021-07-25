@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://dailyco.tech/sitemap.xml
+Host: https://dailyco.tech
